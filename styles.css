@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #E0E7FF, #FFFFFF); /* Dégradé moderne */
+    color: #1A202C;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #2D3748;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+input[type="file"], input[type="text"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #CBD5E0;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#loadBtn {
+    background-color: #4A5568;
+    color: #FFFFFF;
+}
+
+#startQuizBtn, #testBtn, #shareBtn {
+    background-color: #48BB78;
+    color: #FFFFFF;
+}
+
+/* Ajouter ou remplacer ces sections */
+#validate-btn, #back-btn {
+    display: inline-block; /* Par défaut visible */
+}
+
+#restartBtn {
+    padding: 12px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #48BB78;
+    color: #FFFFFF;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#restartBtn:hover {
+    transform: scale(1.05);
+}
+
+#scoreDisplay {
+    font-size: 1.7em; /* Gros score */
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px;
+    border: 3px solid #4A5568;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #E0E7FF, #FFFFFF);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Relief sympa */
+}
+
+#messageDisplay {
+    font-size: 1.2em; /* Phrase plus grande */
+    font-style: italic; /* Style pancarte */
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px dashed #4A5568; /* Effet pancarte */
+    border-radius: 5px;
+    background-color: #F7FAFC;
+}
+
+#question {
+    font-size: 1.3em;
+    margin: 20px 0;
+    color: #2D3748;
+    word-wrap: break-word; /* Gère les questions sur deux lignes */
+    max-width: 100%;
+}
+
+#answers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+#answers button {
+    background-color: #EDF2F7;
+    color: #2D3748;
+    margin: 5px;
+    flex: 1 1 calc(45% - 10px); /* Ajuste pour 2 choix */
+    min-width: 120px;
+}
+
+#answers button[style*="90ee90"] {
+    background-color: #48BB78;
+    color: #FFFFFF;
+}
+
+#answers button:disabled {
+    background-color: #E2E8F0;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #2D3748;
+    border: 1px solid #4A5568; /* Cadre fin */
+    padding: 15px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: left; /* Alignement à gauche */
+    background-color: #F7FAFC; /* Fond légèrement gris clair pour plus de classe */
+}
+
+#result strong {
+    color: #4A5568;
+}
+
+#result a {
+    color: #4A5568;
+    text-decoration: underline;
+}

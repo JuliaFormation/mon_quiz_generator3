@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Créer un Quiz</h1>
+        <input type="file" id="csvFile" accept=".csv">
+        <button id="loadBtn" disabled>Charger le Quiz</button>
+        <input type="text" id="endMessage" placeholder="Ex: score>5:Bravo!;else:Essaie encore!">
+        <button id="startQuizBtn" style="display: none;">Démarrer le Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
